@@ -1,24 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guidomia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xO-PB-YLj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GUIDOMIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEK-Tr-Aok" customClass="Bold24" customModule="Guidomia" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="29.5" width="302" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNG-B6-SFm">
+                                        <rect key="frame" x="338" y="10" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="umY-KT-eJo"/>
+                                            <constraint firstAttribute="height" constant="60" id="vIn-mS-lwa"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="hamburger"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="Orange"/>
+                                <constraints>
+                                    <constraint firstItem="fEK-Tr-Aok" firstAttribute="leading" secondItem="3xO-PB-YLj" secondAttribute="leading" constant="16" id="5mr-5S-9Zb"/>
+                                    <constraint firstItem="ZNG-B6-SFm" firstAttribute="leading" secondItem="fEK-Tr-Aok" secondAttribute="trailing" constant="20" id="7zh-Vt-xez"/>
+                                    <constraint firstItem="ZNG-B6-SFm" firstAttribute="centerY" secondItem="fEK-Tr-Aok" secondAttribute="centerY" id="Qom-ev-QBi"/>
+                                    <constraint firstItem="fEK-Tr-Aok" firstAttribute="centerY" secondItem="3xO-PB-YLj" secondAttribute="centerY" id="VnO-id-xIu"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZNG-B6-SFm" secondAttribute="trailing" constant="16" id="gxY-dH-tUa"/>
+                                    <constraint firstAttribute="height" constant="80" id="pnL-F5-vPD"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cWh-iT-aqN">
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="uAe-EC-C2P">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fev-Mz-rYe">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tacoma" translatesAutoresizingMaskIntoConstraints="NO" id="4iu-SN-mIE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tacoma 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlv-EW-yrd" customClass="Bold28" customModule="Guidomia" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="186" width="382" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get yours now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7c-fB-Bjg" customClass="Bold20" customModule="Guidomia" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="215" width="382" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="4iu-SN-mIE" secondAttribute="bottom" id="0la-4V-ohG"/>
+                                                <constraint firstAttribute="trailing" secondItem="dlv-EW-yrd" secondAttribute="trailing" constant="16" id="4TY-yX-3eg"/>
+                                                <constraint firstAttribute="bottom" secondItem="t7c-fB-Bjg" secondAttribute="bottom" constant="24" id="9fn-7p-YYn"/>
+                                                <constraint firstAttribute="trailing" secondItem="t7c-fB-Bjg" secondAttribute="trailing" constant="16" id="ADm-F4-K9f"/>
+                                                <constraint firstItem="t7c-fB-Bjg" firstAttribute="top" secondItem="dlv-EW-yrd" secondAttribute="bottom" constant="8" id="G7m-na-kd2"/>
+                                                <constraint firstItem="4iu-SN-mIE" firstAttribute="top" secondItem="fev-Mz-rYe" secondAttribute="top" id="L2x-gq-1aP"/>
+                                                <constraint firstItem="4iu-SN-mIE" firstAttribute="leading" secondItem="fev-Mz-rYe" secondAttribute="leading" id="ZeL-6T-jVT"/>
+                                                <constraint firstAttribute="height" constant="260" id="kIE-Rs-WyP"/>
+                                                <constraint firstAttribute="trailing" secondItem="4iu-SN-mIE" secondAttribute="trailing" id="pEu-kR-ULX"/>
+                                                <constraint firstItem="t7c-fB-Bjg" firstAttribute="leading" secondItem="fev-Mz-rYe" secondAttribute="leading" constant="16" id="pFb-5B-Edq"/>
+                                                <constraint firstItem="dlv-EW-yrd" firstAttribute="leading" secondItem="fev-Mz-rYe" secondAttribute="leading" constant="16" id="qV7-gK-MmR"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="fev-Mz-rYe" secondAttribute="trailing" id="TCt-j5-jVQ"/>
+                                        <constraint firstItem="fev-Mz-rYe" firstAttribute="leading" secondItem="uAe-EC-C2P" secondAttribute="leading" id="er3-PX-vk3"/>
+                                        <constraint firstItem="fev-Mz-rYe" firstAttribute="top" secondItem="uAe-EC-C2P" secondAttribute="top" id="oAv-hD-9nC"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QpO-wj-tpf">
+                                        <rect key="frame" x="0.0" y="444.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QpO-wj-tpf" id="XEH-Sz-NZE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cWh-iT-aqN" secondAttribute="trailing" id="2Bd-FA-72W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3xO-PB-YLj" secondAttribute="trailing" id="5k5-u6-EpU"/>
+                            <constraint firstItem="3xO-PB-YLj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PvN-bu-x0c"/>
+                            <constraint firstItem="cWh-iT-aqN" firstAttribute="top" secondItem="3xO-PB-YLj" secondAttribute="bottom" id="XLb-Ta-d1A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cWh-iT-aqN" secondAttribute="bottom" id="dbA-Kd-jJa"/>
+                            <constraint firstItem="cWh-iT-aqN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jRt-LG-lXk"/>
+                            <constraint firstItem="3xO-PB-YLj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wD4-1J-Bsn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="115"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Tacoma" width="5472" height="3648"/>
+        <image name="hamburger" width="32" height="32"/>
+        <namedColor name="Orange">
+            <color red="0.9882352941176471" green="0.37647058823529411" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

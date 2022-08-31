@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8206B1128BE4D3700404124 /* CarDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B1028BE4D3700404124 /* CarDetailsCell.swift */; };
+		A8206B1428BE55FA00404124 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B1328BE55FA00404124 /* RatingView.swift */; };
+		A8206B1828BE58AD00404124 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B1728BE58AD00404124 /* Extension.swift */; };
+		A8206B1A28BE591300404124 /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B1928BE591300404124 /* GenericView.swift */; };
+		A8206B1C28BE5AC500404124 /* RatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8206B1B28BE5AC500404124 /* RatingView.xib */; };
+		A8206B2028BE5B8900404124 /* DottedLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B1F28BE5B8900404124 /* DottedLabelView.swift */; };
+		A8206B2228BE5B9300404124 /* DottedLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8206B2128BE5B9300404124 /* DottedLabelView.xib */; };
+		A8206B2528BF65E700404124 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B2428BF65E700404124 /* DependencyInjection.swift */; };
+		A8206B2C28BF68B500404124 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B2B28BF68B500404124 /* MainViewModel.swift */; };
+		A8206B2E28BF68BE00404124 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B2D28BF68BE00404124 /* MainModel.swift */; };
 		A8D67B8428BE02AD00C40FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D67B8328BE02AD00C40FF2 /* AppDelegate.swift */; };
 		A8D67B8628BE02AD00C40FF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D67B8528BE02AD00C40FF2 /* SceneDelegate.swift */; };
-		A8D67B8828BE02AD00C40FF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D67B8728BE02AD00C40FF2 /* ViewController.swift */; };
+		A8D67B8828BE02AD00C40FF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D67B8728BE02AD00C40FF2 /* MainViewController.swift */; };
 		A8D67B8B28BE02AD00C40FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D67B8928BE02AD00C40FF2 /* Main.storyboard */; };
 		A8D67B8E28BE02AD00C40FF2 /* Guidomia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8D67B8C28BE02AD00C40FF2 /* Guidomia.xcdatamodeld */; };
 		A8D67B9028BE02AF00C40FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D67B8F28BE02AF00C40FF2 /* Assets.xcassets */; };
@@ -42,10 +52,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8206B1028BE4D3700404124 /* CarDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsCell.swift; sourceTree = "<group>"; };
+		A8206B1328BE55FA00404124 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		A8206B1728BE58AD00404124 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		A8206B1928BE591300404124 /* GenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
+		A8206B1B28BE5AC500404124 /* RatingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingView.xib; sourceTree = "<group>"; };
+		A8206B1F28BE5B8900404124 /* DottedLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedLabelView.swift; sourceTree = "<group>"; };
+		A8206B2128BE5B9300404124 /* DottedLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DottedLabelView.xib; sourceTree = "<group>"; };
+		A8206B2428BF65E700404124 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		A8206B2B28BF68B500404124 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A8206B2D28BF68BE00404124 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		A8D67B8028BE02AD00C40FF2 /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D67B8328BE02AD00C40FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8D67B8528BE02AD00C40FF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8D67B8728BE02AD00C40FF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8D67B8728BE02AD00C40FF2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8D67B8A28BE02AD00C40FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8D67B8D28BE02AD00C40FF2 /* Guidomia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Guidomia.xcdatamodel; sourceTree = "<group>"; };
 		A8D67B8F28BE02AF00C40FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +108,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8206B1228BE55DA00404124 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B2728BF681300404124 /* CarDetailsCell */,
+				A8206B1E28BE5B6900404124 /* Dotted Label View */,
+				A8206B1D28BE5B5C00404124 /* RatingView */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		A8206B1D28BE5B5C00404124 /* RatingView */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B1328BE55FA00404124 /* RatingView.swift */,
+				A8206B1B28BE5AC500404124 /* RatingView.xib */,
+			);
+			path = RatingView;
+			sourceTree = "<group>";
+		};
+		A8206B1E28BE5B6900404124 /* Dotted Label View */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B1F28BE5B8900404124 /* DottedLabelView.swift */,
+				A8206B2128BE5B9300404124 /* DottedLabelView.xib */,
+			);
+			path = "Dotted Label View";
+			sourceTree = "<group>";
+		};
+		A8206B2328BF65A000404124 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B2428BF65E700404124 /* DependencyInjection.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A8206B2628BF67C300404124 /* Main Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B2828BF687200404124 /* Model */,
+				A8206B2928BF687800404124 /* ViewModel */,
+				A8206B2A28BF688100404124 /* View */,
+			);
+			path = "Main Scene";
+			sourceTree = "<group>";
+		};
+		A8206B2728BF681300404124 /* CarDetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B1028BE4D3700404124 /* CarDetailsCell.swift */,
+			);
+			path = CarDetailsCell;
+			sourceTree = "<group>";
+		};
+		A8206B2828BF687200404124 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B2D28BF68BE00404124 /* MainModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8206B2928BF687800404124 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B2B28BF68B500404124 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8206B2A28BF688100404124 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B1228BE55DA00404124 /* SubViews */,
+				A8D67B8728BE02AD00C40FF2 /* MainViewController.swift */,
+				A8D67B8928BE02AD00C40FF2 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		A8D67B7728BE02AD00C40FF2 = {
 			isa = PBXGroup;
 			children = (
@@ -111,14 +211,14 @@
 		A8D67B8228BE02AD00C40FF2 /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
+				A8206B2328BF65A000404124 /* Application */,
 				A8D67BBC28BE0A9C00C40FF2 /* Utils */,
 				A8D67BB928BE062900C40FF2 /* Assets */,
 				A8D67BB628BE053900C40FF2 /* Files */,
+				A8206B2628BF67C300404124 /* Main Scene */,
+				A8D67B9128BE02AF00C40FF2 /* LaunchScreen.storyboard */,
 				A8D67B8328BE02AD00C40FF2 /* AppDelegate.swift */,
 				A8D67B8528BE02AD00C40FF2 /* SceneDelegate.swift */,
-				A8D67B8728BE02AD00C40FF2 /* ViewController.swift */,
-				A8D67B8928BE02AD00C40FF2 /* Main.storyboard */,
-				A8D67B9128BE02AF00C40FF2 /* LaunchScreen.storyboard */,
 				A8D67B9428BE02AF00C40FF2 /* Info.plist */,
 				A8D67B8C28BE02AD00C40FF2 /* Guidomia.xcdatamodeld */,
 			);
@@ -164,6 +264,8 @@
 			children = (
 				A8D67BBD28BE0AC100C40FF2 /* Constants.swift */,
 				A8D67BBF28BE0B9400C40FF2 /* Label */,
+				A8206B1728BE58AD00404124 /* Extension.swift */,
+				A8206B1928BE591300404124 /* GenericView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -286,6 +388,8 @@
 				A8D67B9028BE02AF00C40FF2 /* Assets.xcassets in Resources */,
 				A8D67BB828BE055D00C40FF2 /* car_list.json in Resources */,
 				A8D67B8B28BE02AD00C40FF2 /* Main.storyboard in Resources */,
+				A8206B1C28BE5AC500404124 /* RatingView.xib in Resources */,
+				A8206B2228BE5B9300404124 /* DottedLabelView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,9 +416,17 @@
 			files = (
 				A8D67BBE28BE0AC100C40FF2 /* Constants.swift in Sources */,
 				A8D67BC328BE209D00C40FF2 /* SystemFontBold.swift in Sources */,
+				A8206B2528BF65E700404124 /* DependencyInjection.swift in Sources */,
 				A8D67BC128BE204100C40FF2 /* BaseLabel.swift in Sources */,
+				A8206B2028BE5B8900404124 /* DottedLabelView.swift in Sources */,
+				A8206B1428BE55FA00404124 /* RatingView.swift in Sources */,
+				A8206B1128BE4D3700404124 /* CarDetailsCell.swift in Sources */,
+				A8206B2C28BF68B500404124 /* MainViewModel.swift in Sources */,
+				A8206B2E28BF68BE00404124 /* MainModel.swift in Sources */,
+				A8206B1828BE58AD00404124 /* Extension.swift in Sources */,
+				A8206B1A28BE591300404124 /* GenericView.swift in Sources */,
 				A8D67B8E28BE02AD00C40FF2 /* Guidomia.xcdatamodeld in Sources */,
-				A8D67B8828BE02AD00C40FF2 /* ViewController.swift in Sources */,
+				A8D67B8828BE02AD00C40FF2 /* MainViewController.swift in Sources */,
 				A8D67B8428BE02AD00C40FF2 /* AppDelegate.swift in Sources */,
 				A8D67B8628BE02AD00C40FF2 /* SceneDelegate.swift in Sources */,
 			);

@@ -56,3 +56,41 @@ class Bold20: SystemFontBold {
     }
 
 }
+
+class Bold22: SystemFontBold {
+
+    // MARK: - Functions
+
+    override func setupLabel() {
+        super.setupLabel()
+
+        font = font.withSize(22)
+    }
+
+}
+
+class Bold18: SystemFontBold {
+
+    // MARK: - Functions
+
+    override func setupLabel() {
+        super.setupLabel()
+
+        font = font.withSize(18)
+    }
+
+}
+
+class Bold14: SystemFontBold {
+
+    // MARK: - Functions
+
+    override func setupLabel() {
+        super.setupLabel()
+
+        font = font.withSize(14)
+        textColor = Constants.Color.bulletPointText
+    }
+
+}
+

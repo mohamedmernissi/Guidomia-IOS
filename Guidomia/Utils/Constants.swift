@@ -16,4 +16,9 @@ struct Constants {
         static let text = UIColor(named: "Text")
         static let whiteText = UIColor(named: "White Text")
     }
+
+    struct Corner {
+        static let mediumCorner: CGFloat = 8.0
+    }
+
 }

@@ -11,20 +11,20 @@ class RatingView: GenericView {
 
     // MARK: - IBOutlets
 
-    @IBOutlet var imgStars: [UIImageView]!
+    @IBOutlet private weak var stackView: UIStackView!
+    @IBOutlet private var imgStars: [UIImageView]!
 
     override func nibSetup() {
-        if let _ = super.setupView(nibName: RatingView.identifier) {
-
-        }
+        if let _ = super.setupView(nibName: RatingView.identifier) { }
     }
 
     func setRating(_ rating: Int) {
-        for i in 0...imgStars.count {
-            guard i < rating else {
-                continue
+        stackView.subviews.forEach { ratingView in
+            if ratingView.tag < rating {
+                ratingView.isHidden = false
+            } else {
+                ratingView.isHidden = true
             }
-            imgStars[i].isHidden = false
         }
     }
 }

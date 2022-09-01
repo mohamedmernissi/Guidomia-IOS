@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingView" customModule="Guidomia" customModuleProvider="target">
             <connections>
+                <outlet property="stackView" destination="iGy-VF-xnk" id="a0Z-Jx-Cpq"/>
                 <outletCollection property="imgStars" destination="cZp-gz-6ln" collectionClass="NSMutableArray" id="Bkp-Wr-vne"/>
                 <outletCollection property="imgStars" destination="kn3-z5-RT0" collectionClass="NSMutableArray" id="FaX-0h-h33"/>
                 <outletCollection property="imgStars" destination="1CI-Yl-td3" collectionClass="NSMutableArray" id="LnE-FF-TRE"/>
@@ -21,26 +22,29 @@
         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vP-C4-Jon">
             <rect key="frame" x="0.0" y="0.0" width="284" height="30"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iGy-VF-xnk">
-                    <rect key="frame" x="0.0" y="0.0" width="284" height="30"/>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iGy-VF-xnk">
+                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
                     <subviews>
                         <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cZp-gz-6ln">
+                            <rect key="frame" x="0.0" y="-0.5" width="30" height="20"/>
+                            <color key="tintColor" name="Orange"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="eJ2-qS-G59"/>
+                            </constraints>
+                        </imageView>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kn3-z5-RT0">
                             <rect key="frame" x="0.0" y="-0.5" width="0.0" height="20"/>
                             <color key="tintColor" name="Orange"/>
                         </imageView>
-                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kn3-z5-RT0">
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1CI-Yl-td3">
                             <rect key="frame" x="0.0" y="-0.5" width="0.0" height="20"/>
                             <color key="tintColor" name="Orange"/>
                         </imageView>
-                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1CI-Yl-td3">
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uUv-9N-FKc">
                             <rect key="frame" x="0.0" y="-0.5" width="0.0" height="20"/>
                             <color key="tintColor" name="Orange"/>
                         </imageView>
-                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uUv-9N-FKc">
-                            <rect key="frame" x="0.0" y="-0.5" width="0.0" height="20"/>
-                            <color key="tintColor" name="Orange"/>
-                        </imageView>
-                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-ua-Iy0">
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-ua-Iy0">
                             <rect key="frame" x="0.0" y="-0.5" width="0.0" height="20"/>
                             <color key="tintColor" name="Orange"/>
                         </imageView>
@@ -54,7 +58,6 @@
                 <constraint firstAttribute="bottom" secondItem="iGy-VF-xnk" secondAttribute="bottom" id="2Yw-nN-Xm8"/>
                 <constraint firstItem="iGy-VF-xnk" firstAttribute="leading" secondItem="1vP-C4-Jon" secondAttribute="leading" id="FFj-v4-Rt6"/>
                 <constraint firstItem="iGy-VF-xnk" firstAttribute="top" secondItem="1vP-C4-Jon" secondAttribute="top" id="MHL-w6-L5g"/>
-                <constraint firstAttribute="trailing" secondItem="iGy-VF-xnk" secondAttribute="trailing" id="qfO-1m-Vnd"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="96" y="21"/>

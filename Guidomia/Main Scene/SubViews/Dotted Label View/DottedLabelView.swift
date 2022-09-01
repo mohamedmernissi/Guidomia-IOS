@@ -8,9 +8,16 @@
 import UIKit
 
 class DottedLabelView: GenericView {
+
+    @IBOutlet weak var lblTitle: Bold14!
+
     override func nibSetup() {
         if let _ = super.setupView(nibName: DottedLabelView.identifier) {
 
         }
+    }
+
+    func setup(with title: String) {
+        lblTitle.text = title
     }
 }

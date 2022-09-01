@@ -48,6 +48,19 @@ extension UIView {
         }
         return (view as? T) ?? view.parentView(of: T.self)
     }
+
+    func roundCorners(_ corners: UIRectCorner,
+                      radius: CGFloat,
+                      borderColor: UIColor? = nil,
+                      borderWidth: CGFloat = 0) {
+        clipsToBounds = true
+        layer.cornerRadius = radius
+        if let borderColor = borderColor {
+            layer.borderColor = borderColor.cgColor
+            layer.borderWidth = borderWidth
+        }
+        layer.maskedCorners = CACornerMask(rawValue: corners.rawValue)
+    }
 }
 
 extension UITableViewCell {

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainHeaderView" customModule="Guidomia" customModuleProvider="target">
+            <connections>
+                <outlet property="filterView" destination="WgQ-eF-VIT" id="lPd-Ne-XkQ"/>
+                <outlet property="txtMake" destination="lM8-Du-UrR" id="cfK-ak-ozd"/>
+                <outlet property="txtModel" destination="Vu2-ss-od9" id="GPV-nf-SFR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yfK-wK-qWu" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="440"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZt-5U-mDw" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tacoma" translatesAutoresizingMaskIntoConstraints="NO" id="PiS-tl-1i3">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tacoma 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfI-Gr-A3T" customClass="Bold28" customModule="Guidomia" customModuleProvider="target">
+                            <rect key="frame" x="16" y="187.5" width="382" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get yours now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9r-Ud-Dfl" customClass="Bold20" customModule="Guidomia" customModuleProvider="target">
+                            <rect key="frame" x="16" y="215.5" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="R9r-Ud-Dfl" secondAttribute="trailing" constant="16" id="80r-Mk-2xC"/>
+                        <constraint firstAttribute="trailing" secondItem="dfI-Gr-A3T" secondAttribute="trailing" constant="16" id="E6H-Q9-mvB"/>
+                        <constraint firstAttribute="bottom" secondItem="PiS-tl-1i3" secondAttribute="bottom" id="Eh2-wn-tai"/>
+                        <constraint firstAttribute="bottom" secondItem="R9r-Ud-Dfl" secondAttribute="bottom" constant="24" id="Snt-3t-Mew"/>
+                        <constraint firstAttribute="trailing" secondItem="PiS-tl-1i3" secondAttribute="trailing" id="T2F-S4-aoi"/>
+                        <constraint firstAttribute="height" constant="260" id="Vu2-WU-Zct"/>
+                        <constraint firstItem="R9r-Ud-Dfl" firstAttribute="top" secondItem="dfI-Gr-A3T" secondAttribute="bottom" constant="8" id="XKK-jH-uFu"/>
+                        <constraint firstItem="dfI-Gr-A3T" firstAttribute="leading" secondItem="PZt-5U-mDw" secondAttribute="leading" constant="16" id="blh-4x-ClG"/>
+                        <constraint firstItem="PiS-tl-1i3" firstAttribute="top" secondItem="PZt-5U-mDw" secondAttribute="top" id="jkK-SS-6c1"/>
+                        <constraint firstItem="PiS-tl-1i3" firstAttribute="leading" secondItem="PZt-5U-mDw" secondAttribute="leading" id="os1-3e-bQd"/>
+                        <constraint firstItem="R9r-Ud-Dfl" firstAttribute="leading" secondItem="PZt-5U-mDw" secondAttribute="leading" constant="16" id="p8A-j2-hpA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RM-ke-thf" userLabel="Filter View">
+                    <rect key="frame" x="0.0" y="260" width="414" height="180"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgQ-eF-VIT">
+                            <rect key="frame" x="24" y="16" width="366" height="148"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0m-Ih-WXg" customClass="Medium18" customModule="Guidomia" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="16" width="334" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Any Make" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lM8-Du-UrR" customClass="PickerTextField" customModule="Guidomia" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="45" width="334" height="34"/>
+                                    <color key="textColor" name="Text"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Any Model" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vu2-ss-od9" customClass="PickerTextField" customModule="Guidomia" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="87" width="334" height="34"/>
+                                    <color key="textColor" name="Text"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpU-Qk-lqR">
+                                    <rect key="frame" x="314" y="16" width="36" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Clear">
+                                        <color key="titleColor" name="Orange"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clearFilters:" destination="-1" eventType="touchUpInside" id="1wN-cc-d6L"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="Dark gray"/>
+                            <constraints>
+                                <constraint firstItem="lM8-Du-UrR" firstAttribute="top" secondItem="wpU-Qk-lqR" secondAttribute="bottom" id="0xT-jw-8hl"/>
+                                <constraint firstItem="B0m-Ih-WXg" firstAttribute="leading" secondItem="WgQ-eF-VIT" secondAttribute="leading" constant="16" id="6gR-A0-rcn"/>
+                                <constraint firstItem="wpU-Qk-lqR" firstAttribute="top" secondItem="B0m-Ih-WXg" secondAttribute="top" id="A5c-d0-Owe"/>
+                                <constraint firstAttribute="trailing" secondItem="wpU-Qk-lqR" secondAttribute="trailing" constant="16" id="AeF-xo-7as"/>
+                                <constraint firstAttribute="trailing" secondItem="Vu2-ss-od9" secondAttribute="trailing" constant="16" id="Gt3-fI-ox0"/>
+                                <constraint firstAttribute="height" constant="148" id="KPu-S1-5pD"/>
+                                <constraint firstItem="lM8-Du-UrR" firstAttribute="top" secondItem="B0m-Ih-WXg" secondAttribute="bottom" constant="8" id="NcN-3h-a5G"/>
+                                <constraint firstItem="Vu2-ss-od9" firstAttribute="top" secondItem="lM8-Du-UrR" secondAttribute="bottom" constant="8" id="UUo-Mj-R31"/>
+                                <constraint firstAttribute="trailing" secondItem="lM8-Du-UrR" secondAttribute="trailing" constant="16" id="Z1Z-Ff-RKZ"/>
+                                <constraint firstItem="lM8-Du-UrR" firstAttribute="leading" secondItem="WgQ-eF-VIT" secondAttribute="leading" constant="16" id="j2H-fI-YxV"/>
+                                <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Vu2-ss-od9" secondAttribute="bottom" constant="35.666666666666686" id="oRp-GU-sE7"/>
+                                <constraint firstItem="B0m-Ih-WXg" firstAttribute="top" secondItem="WgQ-eF-VIT" secondAttribute="top" constant="16" id="usX-9i-OXV"/>
+                                <constraint firstItem="Vu2-ss-od9" firstAttribute="leading" secondItem="lM8-Du-UrR" secondAttribute="leading" id="vHu-mG-ihk"/>
+                                <constraint firstAttribute="trailing" secondItem="B0m-Ih-WXg" secondAttribute="trailing" constant="16" id="wyt-HG-ccx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="WgQ-eF-VIT" secondAttribute="trailing" constant="24" id="MFV-lv-6cg"/>
+                        <constraint firstAttribute="bottom" secondItem="WgQ-eF-VIT" secondAttribute="bottom" constant="16" id="Z3g-bK-tPA"/>
+                        <constraint firstItem="WgQ-eF-VIT" firstAttribute="leading" secondItem="8RM-ke-thf" secondAttribute="leading" constant="24" id="Zgw-kp-77m"/>
+                        <constraint firstItem="WgQ-eF-VIT" firstAttribute="top" secondItem="8RM-ke-thf" secondAttribute="top" constant="16" id="kNw-ix-yIM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8RM-ke-thf" firstAttribute="top" secondItem="PZt-5U-mDw" secondAttribute="bottom" id="3Oo-bT-vz8"/>
+                <constraint firstItem="PZt-5U-mDw" firstAttribute="top" secondItem="yfK-wK-qWu" secondAttribute="top" id="L37-4V-gl0"/>
+                <constraint firstAttribute="trailing" secondItem="8RM-ke-thf" secondAttribute="trailing" id="Nic-lP-FUE"/>
+                <constraint firstAttribute="trailing" secondItem="PZt-5U-mDw" secondAttribute="trailing" id="dhO-FB-I6F"/>
+                <constraint firstItem="PZt-5U-mDw" firstAttribute="leading" secondItem="yfK-wK-qWu" secondAttribute="leading" id="gLg-gn-TTf"/>
+                <constraint firstItem="8RM-ke-thf" firstAttribute="leading" secondItem="yfK-wK-qWu" secondAttribute="leading" id="k9Q-EV-eJU"/>
+                <constraint firstAttribute="bottom" secondItem="8RM-ke-thf" secondAttribute="bottom" id="z0I-RG-PnK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="99" y="88"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Tacoma" width="5472" height="3648"/>
+        <namedColor name="Dark gray">
+            <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Orange">
+            <color red="0.9882352941176471" green="0.37647058823529411" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.44900000095367432" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -14,9 +14,18 @@
 		A8206B1C28BE5AC500404124 /* RatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8206B1B28BE5AC500404124 /* RatingView.xib */; };
 		A8206B2028BE5B8900404124 /* DottedLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B1F28BE5B8900404124 /* DottedLabelView.swift */; };
 		A8206B2228BE5B9300404124 /* DottedLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8206B2128BE5B9300404124 /* DottedLabelView.xib */; };
-		A8206B2528BF65E700404124 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B2428BF65E700404124 /* DependencyInjection.swift */; };
-		A8206B2C28BF68B500404124 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B2B28BF68B500404124 /* MainViewModel.swift */; };
-		A8206B2E28BF68BE00404124 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B2D28BF68BE00404124 /* MainModel.swift */; };
+		A8206B2E28BF68BE00404124 /* MainEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B2D28BF68BE00404124 /* MainEntity.swift */; };
+		A8206B3528BF7DBA00404124 /* CarsResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B3428BF7DBA00404124 /* CarsResponseData.swift */; };
+		A8206B4128BF96C700404124 /* MainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B3D28BF96C700404124 /* MainContract.swift */; };
+		A8206B4228BF96C700404124 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B3E28BF96C700404124 /* MainPresenter.swift */; };
+		A8206B4328BF96C700404124 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B3F28BF96C700404124 /* MainRouter.swift */; };
+		A8206B4428BF96C700404124 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B4028BF96C700404124 /* MainInteractor.swift */; };
+		A8206B4628C0CEFE00404124 /* SystemFontMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B4528C0CEFE00404124 /* SystemFontMedium.swift */; };
+		A8206B4928C0D0CE00404124 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B4828C0D0CE00404124 /* MainHeaderView.swift */; };
+		A8206B4D28C0DE8E00404124 /* PickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B4B28C0DE8E00404124 /* PickerTextField.swift */; };
+		A8206B4E28C0DE8E00404124 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B4C28C0DE8E00404124 /* Picker.swift */; };
+		A8206B5028C0DEC600404124 /* NoSelectTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8206B4F28C0DEC600404124 /* NoSelectTextField.swift */; };
+		A8206B5328C0E8E600404124 /* MainHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8206B5228C0E8E600404124 /* MainHeaderView.xib */; };
 		A8D67B8428BE02AD00C40FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D67B8328BE02AD00C40FF2 /* AppDelegate.swift */; };
 		A8D67B8628BE02AD00C40FF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D67B8528BE02AD00C40FF2 /* SceneDelegate.swift */; };
 		A8D67B8828BE02AD00C40FF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D67B8728BE02AD00C40FF2 /* MainViewController.swift */; };
@@ -59,9 +68,18 @@
 		A8206B1B28BE5AC500404124 /* RatingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingView.xib; sourceTree = "<group>"; };
 		A8206B1F28BE5B8900404124 /* DottedLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedLabelView.swift; sourceTree = "<group>"; };
 		A8206B2128BE5B9300404124 /* DottedLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DottedLabelView.xib; sourceTree = "<group>"; };
-		A8206B2428BF65E700404124 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
-		A8206B2B28BF68B500404124 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		A8206B2D28BF68BE00404124 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		A8206B2D28BF68BE00404124 /* MainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEntity.swift; sourceTree = "<group>"; };
+		A8206B3428BF7DBA00404124 /* CarsResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsResponseData.swift; sourceTree = "<group>"; };
+		A8206B3D28BF96C700404124 /* MainContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContract.swift; sourceTree = "<group>"; };
+		A8206B3E28BF96C700404124 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		A8206B3F28BF96C700404124 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		A8206B4028BF96C700404124 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		A8206B4528C0CEFE00404124 /* SystemFontMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontMedium.swift; sourceTree = "<group>"; };
+		A8206B4828C0D0CE00404124 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		A8206B4B28C0DE8E00404124 /* PickerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerTextField.swift; sourceTree = "<group>"; };
+		A8206B4C28C0DE8E00404124 /* Picker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		A8206B4F28C0DEC600404124 /* NoSelectTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSelectTextField.swift; sourceTree = "<group>"; };
+		A8206B5228C0E8E600404124 /* MainHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainHeaderView.xib; sourceTree = "<group>"; };
 		A8D67B8028BE02AD00C40FF2 /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D67B8328BE02AD00C40FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8D67B8528BE02AD00C40FF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +129,7 @@
 		A8206B1228BE55DA00404124 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				A8206B4728C0D08500404124 /* MainHeader */,
 				A8206B2728BF681300404124 /* CarDetailsCell */,
 				A8206B1E28BE5B6900404124 /* Dotted Label View */,
 				A8206B1D28BE5B5C00404124 /* RatingView */,
@@ -136,20 +155,17 @@
 			path = "Dotted Label View";
 			sourceTree = "<group>";
 		};
-		A8206B2328BF65A000404124 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				A8206B2428BF65E700404124 /* DependencyInjection.swift */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
 		A8206B2628BF67C300404124 /* Main Scene */ = {
 			isa = PBXGroup;
 			children = (
-				A8206B2828BF687200404124 /* Model */,
-				A8206B2928BF687800404124 /* ViewModel */,
 				A8206B2A28BF688100404124 /* View */,
+				A8206B3D28BF96C700404124 /* MainContract.swift */,
+				A8206B2D28BF68BE00404124 /* MainEntity.swift */,
+				A8206B3E28BF96C700404124 /* MainPresenter.swift */,
+				A8206B3F28BF96C700404124 /* MainRouter.swift */,
+				A8206B4028BF96C700404124 /* MainInteractor.swift */,
+				A8D67B8728BE02AD00C40FF2 /* MainViewController.swift */,
+				A8D67B8928BE02AD00C40FF2 /* Main.storyboard */,
 			);
 			path = "Main Scene";
 			sourceTree = "<group>";
@@ -162,30 +178,47 @@
 			path = CarDetailsCell;
 			sourceTree = "<group>";
 		};
-		A8206B2828BF687200404124 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A8206B2D28BF68BE00404124 /* MainModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A8206B2928BF687800404124 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A8206B2B28BF68B500404124 /* MainViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		A8206B2A28BF688100404124 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				A8206B1228BE55DA00404124 /* SubViews */,
-				A8D67B8728BE02AD00C40FF2 /* MainViewController.swift */,
-				A8D67B8928BE02AD00C40FF2 /* Main.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		A8206B3328BF7D9700404124 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B3428BF7DBA00404124 /* CarsResponseData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A8206B4728C0D08500404124 /* MainHeader */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B4828C0D0CE00404124 /* MainHeaderView.swift */,
+				A8206B5228C0E8E600404124 /* MainHeaderView.xib */,
+			);
+			path = MainHeader;
+			sourceTree = "<group>";
+		};
+		A8206B4A28C0DE7B00404124 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B4F28C0DEC600404124 /* NoSelectTextField.swift */,
+				A8206B4C28C0DE8E00404124 /* Picker.swift */,
+				A8206B4B28C0DE8E00404124 /* PickerTextField.swift */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		A8206B5128C0DFB000404124 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8206B1928BE591300404124 /* GenericView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A8D67B7728BE02AD00C40FF2 = {
@@ -211,7 +244,7 @@
 		A8D67B8228BE02AD00C40FF2 /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
-				A8206B2328BF65A000404124 /* Application */,
+				A8206B3328BF7D9700404124 /* Data */,
 				A8D67BBC28BE0A9C00C40FF2 /* Utils */,
 				A8D67BB928BE062900C40FF2 /* Assets */,
 				A8D67BB628BE053900C40FF2 /* Files */,
@@ -263,9 +296,10 @@
 			isa = PBXGroup;
 			children = (
 				A8D67BBD28BE0AC100C40FF2 /* Constants.swift */,
-				A8D67BBF28BE0B9400C40FF2 /* Label */,
 				A8206B1728BE58AD00404124 /* Extension.swift */,
-				A8206B1928BE591300404124 /* GenericView.swift */,
+				A8206B4A28C0DE7B00404124 /* Picker */,
+				A8206B5128C0DFB000404124 /* View */,
+				A8D67BBF28BE0B9400C40FF2 /* Label */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -275,6 +309,7 @@
 			children = (
 				A8D67BC028BE204100C40FF2 /* BaseLabel.swift */,
 				A8D67BC228BE209D00C40FF2 /* SystemFontBold.swift */,
+				A8206B4528C0CEFE00404124 /* SystemFontMedium.swift */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -387,6 +422,7 @@
 				A8D67B9328BE02AF00C40FF2 /* LaunchScreen.storyboard in Resources */,
 				A8D67B9028BE02AF00C40FF2 /* Assets.xcassets in Resources */,
 				A8D67BB828BE055D00C40FF2 /* car_list.json in Resources */,
+				A8206B5328C0E8E600404124 /* MainHeaderView.xib in Resources */,
 				A8D67B8B28BE02AD00C40FF2 /* Main.storyboard in Resources */,
 				A8206B1C28BE5AC500404124 /* RatingView.xib in Resources */,
 				A8206B2228BE5B9300404124 /* DottedLabelView.xib in Resources */,
@@ -416,19 +452,27 @@
 			files = (
 				A8D67BBE28BE0AC100C40FF2 /* Constants.swift in Sources */,
 				A8D67BC328BE209D00C40FF2 /* SystemFontBold.swift in Sources */,
-				A8206B2528BF65E700404124 /* DependencyInjection.swift in Sources */,
+				A8206B4128BF96C700404124 /* MainContract.swift in Sources */,
+				A8206B3528BF7DBA00404124 /* CarsResponseData.swift in Sources */,
+				A8206B5028C0DEC600404124 /* NoSelectTextField.swift in Sources */,
 				A8D67BC128BE204100C40FF2 /* BaseLabel.swift in Sources */,
+				A8206B4328BF96C700404124 /* MainRouter.swift in Sources */,
 				A8206B2028BE5B8900404124 /* DottedLabelView.swift in Sources */,
 				A8206B1428BE55FA00404124 /* RatingView.swift in Sources */,
 				A8206B1128BE4D3700404124 /* CarDetailsCell.swift in Sources */,
-				A8206B2C28BF68B500404124 /* MainViewModel.swift in Sources */,
-				A8206B2E28BF68BE00404124 /* MainModel.swift in Sources */,
+				A8206B2E28BF68BE00404124 /* MainEntity.swift in Sources */,
 				A8206B1828BE58AD00404124 /* Extension.swift in Sources */,
+				A8206B4D28C0DE8E00404124 /* PickerTextField.swift in Sources */,
 				A8206B1A28BE591300404124 /* GenericView.swift in Sources */,
+				A8206B4928C0D0CE00404124 /* MainHeaderView.swift in Sources */,
+				A8206B4228BF96C700404124 /* MainPresenter.swift in Sources */,
+				A8206B4428BF96C700404124 /* MainInteractor.swift in Sources */,
 				A8D67B8E28BE02AD00C40FF2 /* Guidomia.xcdatamodeld in Sources */,
 				A8D67B8828BE02AD00C40FF2 /* MainViewController.swift in Sources */,
 				A8D67B8428BE02AD00C40FF2 /* AppDelegate.swift in Sources */,
+				A8206B4628C0CEFE00404124 /* SystemFontMedium.swift in Sources */,
 				A8D67B8628BE02AD00C40FF2 /* SceneDelegate.swift in Sources */,
+				A8206B4E28C0DE8E00404124 /* Picker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,7 +653,6 @@
 				INFOPLIST_FILE = Guidomia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -637,7 +680,6 @@
 				INFOPLIST_FILE = Guidomia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
